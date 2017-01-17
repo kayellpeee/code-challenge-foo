@@ -1,0 +1,11 @@
+{
+  "name": "opendns-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Keenan <klp2012@gmail.com> (http://klp.ninja/)",
+  "license": "ISC"
+}
