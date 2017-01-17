@@ -8,6 +8,9 @@
   },
   "author": "Keenan <klp2012@gmail.com> (http://klp.ninja/)",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
   "devDependencies": {
     "eslint": "^3.13.1",
     "eslint-config-airbnb": "^14.0.0",
