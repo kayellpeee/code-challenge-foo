@@ -1,15 +1,11 @@
 USE urlinfo;
 
-CREATE TYPE url (
+CREATE TABLE urls (
+  url_id uuid PRIMARY KEY,
   hostname text,
   port text,
   path text,
   query_string text
-);
-
-CREATE TABLE urls (
-  url_id uuid PRIMARY KEY,
-  url frozen <url>,
   filter_level float,
   safe boolean,
   created timeuuid,
