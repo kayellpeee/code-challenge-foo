@@ -4,7 +4,8 @@
   "description": "",
   "main": "code/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node code/server.js"
   },
   "author": "Keenan <klp2012@gmail.com> (http://klp.ninja/)",
   "license": "ISC",
