@@ -11,3 +11,6 @@ CREATE TABLE urls (
   created timeuuid,
   updated timeuuid
 );
+
+CREATE INDEX urls_index_hostname ON urls (hostname);
+CREATE INDEX urls_index_path ON urls (path);
