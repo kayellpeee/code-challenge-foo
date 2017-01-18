@@ -5,7 +5,7 @@ CREATE TABLE urls (
   hostname text,
   port text,
   path text,
-  query_string text
+  query_string text,
   filter_level float,
   safe boolean,
   created timeuuid,
