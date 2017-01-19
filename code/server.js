@@ -48,7 +48,7 @@ app.get(/urlinfo\/v1\/(.*):([0-9]{1,5})\/(.*)/, (req, res) => {
     });
 });
 
-app.post('/urlinfo/v1', (req, res) => {
+app.post('/urlinfo/v1/urls', (req, res) => {
   const urls = req.body.urls;
   const updateQuery = 'INSERT INTO urls (url_id, hostname, port, path, query_string, filter_level, safe, created, updated) VALUES (uuid(), ?, ?, ?, ?, ?, ?, now(), now())';
 
