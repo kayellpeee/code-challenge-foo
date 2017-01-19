@@ -14,7 +14,6 @@ const db = new Cassandra.Client({
   queryOptions: {
     prepare: true,
     consitency: Cassandra.types.consistencies.localQuorum,
-    traceQuery: true,
   },
   authProvider,
 });
