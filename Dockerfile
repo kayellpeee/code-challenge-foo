@@ -1,5 +1,5 @@
 FROM node:boron-alpine
-ADD package.json /files/
+ADD package.json .env /files/
 ADD code/server.js /files/code/server.js
 WORKDIR /files
 RUN npm install
