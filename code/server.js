@@ -32,7 +32,16 @@ app.get(/urlinfo\/v1\/(.*):([0-9]{1,5})\/(.*)/, (req, res) => {
   db.execute(dbQuery, [hostname, port, path, queryString])
     .then((result) => {
       const row = result.first();
-      res.send(row);
+      if (row) {
+        res.send(row);
+      } else {
+        res.send({
+          url_id: null,
+          filter_level: null,
+          safe: null,
+          error: 'url not found!',
+        });
+      }
     })
     .catch((err) => {
       res.status(502).send(err);
