@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 
 app.get(/urlinfo\/v1\/(.*):([0-9]{1,5})\/(.*)/, (req, res) => {
   const hostname = req.params[0];
-  const port = req.params[1];
+  const port = parseInt(req.params[1]);
   const path = req.params[2];
   const queryString = `?${req.query}`;
 
