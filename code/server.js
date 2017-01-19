@@ -13,6 +13,8 @@ const db = new Cassandra.Client({
   keyspace: 'urlinfo',
   queryOptions: {
     prepare: true,
+    consitency: Cassandra.types.consistencies.localQuorum,
+    traceQuery: true,
   },
   authProvider,
 });
