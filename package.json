@@ -10,6 +10,7 @@
   "author": "Keenan <klp2012@gmail.com> (http://klp.ninja/)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.16.0",
     "cassandra-driver": "^3.2.0",
     "dotenv": "^4.0.0",
     "express": "^4.14.0"
